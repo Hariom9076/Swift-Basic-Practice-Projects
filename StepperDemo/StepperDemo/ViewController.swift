@@ -20,7 +20,5 @@ class ViewController: UIViewController {
         label.text = Int(sender.value).description
     }
     
-    
-
 }
 
