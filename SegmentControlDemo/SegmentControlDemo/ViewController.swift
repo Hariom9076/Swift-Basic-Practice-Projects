@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             label.text = "Twitter"
             image.image = UIImage(named: "twitter_image")
             image.isHidden = false
+            
         }
     }
     
