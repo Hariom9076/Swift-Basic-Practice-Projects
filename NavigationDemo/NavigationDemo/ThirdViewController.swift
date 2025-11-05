@@ -20,6 +20,7 @@ class ThirdViewController: UIViewController {
     }
     @IBAction func Homebutton(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
+        
     }
     
     
