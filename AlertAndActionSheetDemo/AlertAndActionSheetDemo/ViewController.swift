@@ -46,7 +46,6 @@ class ViewController: UIViewController {
         alert.addAction(defaultbutton)
         alert.addAction(cancelbutton)
         present(alert, animated: true, completion: nil)
-        
     }
     
     @IBAction func actionsheet(_ sender: UIButton) {
