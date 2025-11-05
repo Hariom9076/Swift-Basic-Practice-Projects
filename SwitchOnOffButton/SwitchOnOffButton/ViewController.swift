@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         }else{
             label.text = "switch is OFF"
             self.view.backgroundColor = UIColor.red
+            
         }
     }
     
