@@ -19,34 +19,34 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MuM-bf-LXY">
                                 <rect key="frame" x="74.666666666666686" y="178" width="291" height="54"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-ay-QoF">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-ay-QoF">
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="h09-0O-Yk7"/>
                                             <constraint firstAttribute="width" constant="54" id="y63-T1-rim"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbp-J5-AM1">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbp-J5-AM1">
                                         <rect key="frame" x="78.999999999999986" y="0.0" width="54.000000000000014" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="bot-UD-I3l"/>
                                             <constraint firstAttribute="width" constant="54" id="iqy-cw-2Bw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-Sw-V29">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-Sw-V29">
                                         <rect key="frame" x="158" y="0.0" width="54" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="BLY-AL-udT"/>
                                             <constraint firstAttribute="width" constant="54" id="hGQ-NQ-8as"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D67-rG-XxD">
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D67-rG-XxD">
                                         <rect key="frame" x="237" y="0.0" width="54" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="54" id="Ps2-C1-Ice"/>
@@ -65,6 +65,12 @@
                             <constraint firstItem="MuM-bf-LXY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g5D-I6-RYu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textfield1" destination="hqA-ay-QoF" id="Elr-sN-nrB"/>
+                        <outlet property="textfield2" destination="Cbp-J5-AM1" id="DGV-iA-5wc"/>
+                        <outlet property="textfield3" destination="hpd-Sw-V29" id="bYH-vI-Nph"/>
+                        <outlet property="textfield4" destination="D67-rG-XxD" id="9XK-do-aQO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
